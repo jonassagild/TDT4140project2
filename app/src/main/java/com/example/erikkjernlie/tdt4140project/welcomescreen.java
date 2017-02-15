@@ -16,7 +16,7 @@ public class welcomescreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent homeIntent = new Intent(welcomescreen.this, homescreen.class);
+                Intent homeIntent = new Intent(welcomescreen.this, MainActivity.class);
                 startActivity(homeIntent);
                 finish();
             }
