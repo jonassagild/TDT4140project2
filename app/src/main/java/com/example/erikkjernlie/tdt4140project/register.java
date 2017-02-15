@@ -21,6 +21,8 @@ public class register extends AppCompatActivity {
         character.run();
 
 
+        //er noen endringer her ja
+
 
     }
 
