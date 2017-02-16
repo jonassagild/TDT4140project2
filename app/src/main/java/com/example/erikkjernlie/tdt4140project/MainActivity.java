@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -19,6 +20,7 @@ public class MainActivity extends Activity {
     private ListView lvProduct;
     private ProductListAdapter adapter;
     private List<Product> mProductList;
+    private EditText input;
 
     @Override
     protected void onCreate(Bundle saveInstanceState){
@@ -27,11 +29,11 @@ public class MainActivity extends Activity {
 
         lvProduct = (ListView) findViewById(R.id.listview_product);
         mProductList = new ArrayList<>();
-        mProductList.add(new Product(1, "iPhone 4", 210, "Apple 16 GB"));
-        mProductList.add(new Product(2, "iPhone 4", 210, "Apple 16 GB"));
-        mProductList.add(new Product(3, "iPhone 4", 210, "Apple 16 GB"));
-        mProductList.add(new Product(4, "iPhone 4", 210, "Apple 16 GB"));
-        mProductList.add(new Product(5, "iPhone 4", 210, "Apple 16 GB"));
+        mProductList.add(new Product(1, "Hello, and welcome to uniBOT", 123, "What can I help you with?"));
+        //mProductList.add(new Product(2, "iPhone 4", 210, "Apple 16 GB"));
+        input = (EditText) findViewById(R.id.input);
+        mProductList.add(new Product(2, input.toString(), 123, "Thank you."));
+
 
         //init adapter
         adapter = new ProductListAdapter(getApplicationContext(), mProductList);
