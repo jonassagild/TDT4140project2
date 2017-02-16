@@ -22,7 +22,8 @@ public class Character {
     }
 
     public void run() {
-        textView.setText("hei");
+        textView.setText("heihei");
 
     }
+
 }
