@@ -28,6 +28,7 @@
         <activity android:name=".explore" />
         <activity android:name=".register" />
         <activity android:name=".MainActivity"/>
+        <activity android:name=".mainchat"/>
         <!--
         må huske ha med alle aktiviteter som kjøres her
         -->

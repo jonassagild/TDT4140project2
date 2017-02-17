@@ -2,11 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="5dp"
+    android:paddingBottom="2dp"
     android:paddingLeft="10dp"
     android:paddingRight="10dp"
     android:paddingTop="5dp"
-    android:background="#000000">
+    android:background="@drawable/chatbubbleleft"
+    >
 
 
     <TextView
@@ -15,7 +16,7 @@
         android:id="@+id/tv_name"
         android:text="Hello."
         android:textSize="20dp"
-        android:textColor="#67CDFF"
+        android:textColor="#52A4CC"
         />
 
     <TextView
@@ -24,7 +25,7 @@
         android:id="@+id/tv_price"
         android:text="My name is uniBOT."
         android:textSize="18dp"
-        android:textColor="#FF0000"
+        android:textColor="#52A4CC"
         />
 
 
@@ -34,6 +35,7 @@
         android:id="@+id/tv_description"
         android:text="What do you want to know?"
         android:textSize="16dp"
-        android:textColor="#FFFFFF"
+        android:textColor="#52A4CC"
+
         />
 </LinearLayout>
