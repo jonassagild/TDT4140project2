@@ -25,7 +25,7 @@ public class homescreen extends AppCompatActivity {
         but2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent c = new Intent(homescreen.this, explore.class);
+                Intent c = new Intent(homescreen.this, mainchat.class);
                 startActivity(c);
             }
         });
